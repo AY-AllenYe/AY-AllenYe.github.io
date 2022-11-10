@@ -16,7 +16,7 @@
 <meta property="og:description" content="经陈小雕老师和高飞老师推荐，于2022.9入坑Games，图形学很早就接触了，无奈学校卷图形学的氛围一般，蹲一个小伙伴~目前Games101课程（2020）已经悉数看完，开始练手作业。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-11-09T11:42:16.129Z">
+<meta property="article:modified_time" content="2022-11-09T15:32:40.870Z">
 <meta property="article:author" content="Allen Ye">
 <meta property="article:tag" content="Games">
 <meta name="twitter:card" content="summary">
@@ -189,12 +189,42 @@
 <span id="more"></span> 
 
 <blockquote>
-<p>正文共计158字。</p>
+<p>熟悉 Eigen &amp; Visual Studio &amp; C++</p>
 </blockquote>
 <br/>
 <p align="left">
+&emsp按照闫令琪老师的要求，应该安装Linux虚拟机。但小生用win更习惯，就暂时先采用windows来编程。配置Eigen库有点点难受，主要参考了大佬的csdn分享。下附链接：
+<br/>
+[转：Games101环境搭建](https://blog.csdn.net/KKsuser/article/details/124579099)
+<br/>
+&emsp大佬用的是vscode，我用的是VS。只用下载一个Eigen库，再添加路径与目录就行。（为方便后续使用，我又下载了一个OpenCV库）
+<br/>
+在配置VS的时候又踩了雷，简述怎么排的雷吧：
+<br/>
+先新建一个工程文件，然后打开"项目->属性->VC++目录"，在“包含目录”中插入OpenCV的include路径和Eigen
+>我的两个库都在D盘下，所以就是D:\openCV\build\include;D:\Eigen;
 
+<p>在“库目录”中插入openCV的lib文件路径</p>
+<blockquote>
+<p>D:\openCV\opencv\build\x64\vc15\lib;</p>
+</blockquote>
+<br/>
+结束。在运行的时候选择配置好的平台就行（我的是Debug-x64）
+<br/>
+More info: [Games101-Assignment0](https://ay-allenye.github.io/Games/Games101/Assignments/Assignment0.pdf)
 
+<br/>
+由于小生第一次接触C++，注释写的详细了一点。
+<br/>
+![图片](https://ay-allenye.github.io/Games/Games101/codes/hw0/img/G101-hw0-pic01.jpg)
+<br/>
+![图片](https://ay-allenye.github.io/Games/Games101/codes/hw0/img/G101-hw0-pic02.jpg)
+<br/>
+![图片](https://ay-allenye.github.io/Games/Games101/codes/hw0/img/G101-hw0-pic03.jpg)
+<br/>
+以下是修改后的我的代码文件：
+<br/>
+[Games101-hw0-code](https://ay-allenye.github.io/Games/Games101/codes/hw0/G101_hw0.rar)
 <br/>
 <br/>
 <p align="right"> 阿火
@@ -434,11 +464,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">诗兴随笔</a>
+                <a href="javascript:void(0)" class="js-tag color5">学习笔记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">学习笔记</a>
+                <a href="javascript:void(0)" class="js-tag color5">诗兴随笔</a>
               </li>
             
             <div class="clearfix"></div>
